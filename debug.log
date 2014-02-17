@@ -1,0 +1,118 @@
+date: 2014-02-17 17:05:11.033
+argv: node C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\bin\hexo s --debug
+os: Windows_NT 6.1.7600 win32 ia32
+version:
+  hexo: 2.4.5
+  http_parser: 1.0
+  node: 0.10.21
+  v8: 3.14.5.9
+  ares: 1.9.0-DEV
+  uv: 0.10.18
+  zlib: 1.2.3
+  modules: 11
+  openssl: 1.0.1e
+---
+
+[debug] 17:05:11.668 Configuration file load successfully
+[debug] 17:05:11.677 Version info checked successfully
+[debug] 17:05:11.803 Theme layout loaded
+[debug] 17:05:11.812 Theme configuration loaded
+[debug] 17:05:11.860 Theme source loaded
+[debug] 17:05:11.864 Theme language files loaded
+[debug] 17:05:11.876 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:05:11.882 Cache saved
+[info] 17:05:11.903 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
+[debug] 17:05:14.229 Render index: 
+[create] 17:10:15.937 Source: _posts\.subl6ca.tmp
+[create] 17:10:15.942 Source: _posts\.subl6ca.tmp
+[update] 17:10:15.953 Source: _posts\.subl6ca.tmp
+[update] 17:10:15.963 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:10:15.964 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:10:15.966 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:10:15.967 Source: _posts\.subl6ca.tmp
+[delete] 17:10:15.969 Source: _posts\.subl6ca.tmp
+[debug] 17:10:16.084 Processed: _posts/.subl6ca.tmp
+[debug] 17:10:16.227 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:10:16.230 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:10:16.231 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:10:16.234 Cache saved
+[debug] 17:10:19.781 Render index: 
+[create] 17:10:54.769 Source: _posts\.subl699.tmp
+[create] 17:10:54.772 Source: _posts\.subl699.tmp
+[update] 17:10:54.788 Source: _posts\.subl699.tmp
+[update] 17:10:54.796 Source: _posts\.subl699.tmp
+[update] 17:10:54.809 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:10:54.813 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:10:54.816 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[delete] 17:10:54.820 Source: _posts\.subl699.tmp
+[debug] 17:10:54.932 Processed: _posts/.subl699.tmp
+[debug] 17:10:54.978 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:10:54.986 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:10:54.987 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:10:54.991 Cache saved
+[debug] 17:10:55.766 Render index: 
+[create] 17:17:27.300 Source: _posts\.subl902.tmp
+[create] 17:17:27.304 Source: _posts\.subl902.tmp
+[update] 17:17:27.323 Source: _posts\.subl902.tmp
+[update] 17:17:27.342 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:17:27.346 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:17:27.349 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:17:27.351 Source: _posts\.subl902.tmp
+[delete] 17:17:27.352 Source: _posts\.subl902.tmp
+[debug] 17:17:27.465 Processed: _posts/.subl902.tmp
+[debug] 17:17:27.531 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:17:27.533 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:17:27.535 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:17:27.537 Cache saved
+[debug] 17:17:33.264 Render index: 
+[create] 17:23:57.045 Source: _posts\.sublbb9.tmp
+[create] 17:23:57.049 Source: _posts\.sublbb9.tmp
+[update] 17:23:57.066 Source: _posts\.sublbb9.tmp
+[update] 17:23:57.073 Source: _posts\.sublbb9.tmp
+[update] 17:23:57.087 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:23:57.090 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:23:57.093 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[delete] 17:23:57.096 Source: _posts\.sublbb9.tmp
+[debug] 17:23:57.209 Processed: _posts/.sublbb9.tmp
+[debug] 17:23:57.320 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:23:57.323 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:23:57.324 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:23:57.327 Cache saved
+[debug] 17:24:01.035 Render index: 
+[create] 17:48:17.356 Source: _posts\.subl772.tmp
+[create] 17:48:17.359 Source: _posts\.subl772.tmp
+[update] 17:48:17.365 Source: _posts\.subl772.tmp
+[update] 17:48:17.372 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[delete] 17:48:17.377 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:48:17.380 Source: _posts\.subl772.tmp
+[delete] 17:48:17.386 Source: _posts\.subl772.tmp
+[update] 17:48:17.387 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[update] 17:48:17.388 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.393 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.395 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.396 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.397 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.399 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.400 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.401 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[create] 17:48:17.402 Source: _posts\2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.508 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.509 Processed: _posts/.subl772.tmp
+[debug] 17:48:17.574 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.577 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.579 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.580 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.581 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.583 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.584 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.585 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.585 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.586 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.587 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 17:48:17.590 Cache saved
+[update] 17:51:21.195 Theme: .gitignore
+[update] 17:51:21.202 Theme: .gitignore
+[update] 17:51:21.212 Theme: .git\index
+[update] 17:51:21.214 Theme: .git\index
+[update] 17:51:24.276 Theme: .gitignore
+[update] 17:51:24.278 Theme: .gitignore
