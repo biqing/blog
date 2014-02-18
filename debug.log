@@ -1,4 +1,4 @@
-date: 2014-02-18 10:00:56.814
+date: 2014-02-18 10:07:47.109
 argv: node C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\bin\hexo s --debug
 os: Windows_NT 6.1.7600 win32 ia32
 version:
@@ -24,3 +24,44 @@ version:
 [debug] 10:01:02.778 Cache saved
 [info] 10:01:02.798 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
 [debug] 10:01:13.058 Render index: 
+[update] 10:07:47.034 Theme: .gitignore
+[delete] 10:07:47.036 Theme: .gitignore
+[update] 10:07:47.055 Theme: LICENSE
+[delete] 10:07:47.056 Theme: LICENSE
+[update] 10:07:47.068 Theme: README.md
+[delete] 10:07:47.069 Theme: README.md
+[update] 10:07:47.071 Theme: _config.yml
+[delete] 10:07:47.072 Theme: _config.yml
+[update] 10:07:47.077 Theme: languages\de.yml
+[delete] 10:07:47.080 Theme: languages\de.yml
+[update] 10:07:47.081 Theme: languages\default.yml
+[delete] 10:07:47.083 Theme: languages\default.yml
+[update] 10:07:47.085 Theme: languages\es.yml
+[delete] 10:07:47.087 Theme: languages\es.yml
+[update] 10:07:47.088 Theme: languages\ru.yml
+[delete] 10:07:47.090 Theme: languages\ru.yml
+[update] 10:07:47.091 Theme: languages\zh-CN.yml
+[delete] 10:07:47.093 Theme: languages\zh-CN.yml
+[update] 10:07:47.095 Theme: languages\zh-TW.yml
+[error] 10:07:47.097 Error: watch EPERM
+Error: watch EPERM
+    at errnoException (fs.js:1019:11)
+    at FSEvent.FSWatcher._handle.onchange (fs.js:1037:26)
+
+[update] 10:07:47.102 Theme: layout\archive.ejs
+[delete] 10:07:47.103 Theme: layout\archive.ejs
+[delete] 10:07:47.105 Theme: languages\zh-TW.yml
+[info] 10:07:47.106 unlinkDir Theme: %s languages
+[update] 10:07:47.107 Theme: layout\category.ejs
+[delete] 10:07:47.109 Theme: layout\category.ejs
+[delete] 10:07:47.112 Theme: layout\index.ejs
+[update] 10:07:47.113 Theme: layout\index.ejs
+[delete] 10:07:47.116 Theme: layout\layout.ejs
+[update] 10:07:47.117 Theme: layout\layout.ejs
+[update] 10:07:47.119 Theme: layout\page.ejs
+[delete] 10:07:47.120 Theme: layout\page.ejs
+[delete] 10:07:47.121 Theme: layout\post.ejs
+[update] 10:07:47.122 Theme: layout\post.ejs
+[delete] 10:07:47.124 Theme: layout\tag.ejs
+[update] 10:07:47.125 Theme: layout\tag.ejs
+[update] 10:07:47.128 Theme: layout\_partial\after_footer.ejs
