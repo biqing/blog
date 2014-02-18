@@ -1,5 +1,5 @@
-date: 2014-02-18 10:07:47.109
-argv: node C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\bin\hexo s --debug
+date: 2014-02-18 10:45:14.169
+argv: node C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\bin\hexo g
 os: Windows_NT 6.1.7600 win32 ia32
 version:
   hexo: 2.4.5
@@ -13,55 +13,42 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 10:01:01.792 Configuration file load successfully
-[debug] 10:01:01.828 Version info checked successfully
-[debug] 10:01:02.256 Loading database.
-[debug] 10:01:02.572 Theme configuration loaded
-[debug] 10:01:02.593 Theme layout loaded
-[debug] 10:01:02.738 Processed: _posts/2014-02-17-infinity-world-重新起航.md
-[debug] 10:01:02.770 Theme source loaded
-[debug] 10:01:02.775 Theme language files loaded
-[debug] 10:01:02.778 Cache saved
-[info] 10:01:02.798 Hexo is running at localhost:4000/. Press Ctrl+C to stop.
-[debug] 10:01:13.058 Render index: 
-[update] 10:07:47.034 Theme: .gitignore
-[delete] 10:07:47.036 Theme: .gitignore
-[update] 10:07:47.055 Theme: LICENSE
-[delete] 10:07:47.056 Theme: LICENSE
-[update] 10:07:47.068 Theme: README.md
-[delete] 10:07:47.069 Theme: README.md
-[update] 10:07:47.071 Theme: _config.yml
-[delete] 10:07:47.072 Theme: _config.yml
-[update] 10:07:47.077 Theme: languages\de.yml
-[delete] 10:07:47.080 Theme: languages\de.yml
-[update] 10:07:47.081 Theme: languages\default.yml
-[delete] 10:07:47.083 Theme: languages\default.yml
-[update] 10:07:47.085 Theme: languages\es.yml
-[delete] 10:07:47.087 Theme: languages\es.yml
-[update] 10:07:47.088 Theme: languages\ru.yml
-[delete] 10:07:47.090 Theme: languages\ru.yml
-[update] 10:07:47.091 Theme: languages\zh-CN.yml
-[delete] 10:07:47.093 Theme: languages\zh-CN.yml
-[update] 10:07:47.095 Theme: languages\zh-TW.yml
-[error] 10:07:47.097 Error: watch EPERM
-Error: watch EPERM
-    at errnoException (fs.js:1019:11)
-    at FSEvent.FSWatcher._handle.onchange (fs.js:1037:26)
+[debug] 10:45:13.314 Configuration file load successfully
+[debug] 10:45:13.318 Version info checked successfully
+[debug] 10:45:13.377 Loading database.
+[debug] 10:45:13.525 Theme configuration loaded
+[debug] 10:45:13.539 Theme layout loaded
+[debug] 10:45:13.734 Theme source loaded
+[debug] 10:45:13.736 Theme language files loaded
+[debug] 10:45:13.745 Processed: _posts/2014-02-17-infinity-world-重新起航.md
+[debug] 10:45:13.755 Cache saved
+[info] 10:45:13.791 Files loaded in 0.350s
+[debug] 10:45:13.816 Public folder not exists. No need to clear public folder.
+[debug] 10:45:13.818 Render archive: archives/
+[debug] 10:45:13.818 Render archive: archives/2014/
+[debug] 10:45:13.819 Render archive: archives/2014/02/
+[debug] 10:45:13.819 Render index: 
+[debug] 10:45:13.819 Render post: 2014/02/17/infinity-world-重新起航/
+[error] 10:45:14.131 HexoError: Render failed: css/style.css
+ParseError: D:\Project\blog\themes\striped\source\css\style.styl:20
+   16| 
+   17| /*********************************************************************************/
+   18| /* Basic                                                                         */
+   19| /*********************************************************************************/
+ > 20| 
+   21|     *
+   22|     {
+   23|         -moz-box-sizing: border-box;
 
-[update] 10:07:47.102 Theme: layout\archive.ejs
-[delete] 10:07:47.103 Theme: layout\archive.ejs
-[delete] 10:07:47.105 Theme: languages\zh-TW.yml
-[info] 10:07:47.106 unlinkDir Theme: %s languages
-[update] 10:07:47.107 Theme: layout\category.ejs
-[delete] 10:07:47.109 Theme: layout\category.ejs
-[delete] 10:07:47.112 Theme: layout\index.ejs
-[update] 10:07:47.113 Theme: layout\index.ejs
-[delete] 10:07:47.116 Theme: layout\layout.ejs
-[update] 10:07:47.117 Theme: layout\layout.ejs
-[update] 10:07:47.119 Theme: layout\page.ejs
-[delete] 10:07:47.120 Theme: layout\page.ejs
-[delete] 10:07:47.121 Theme: layout\post.ejs
-[update] 10:07:47.122 Theme: layout\post.ejs
-[delete] 10:07:47.124 Theme: layout\tag.ejs
-[update] 10:07:47.125 Theme: layout\tag.ejs
-[update] 10:07:47.128 Theme: layout\_partial\after_footer.ejs
+unexpected "indent"
+
+    at Parser.error (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\node_modules\stylus\lib\parser.js:179:11)
+    at Parser.stmt (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\node_modules\stylus\lib\parser.js:665:32)
+    at Parser.statement (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\node_modules\stylus\lib\parser.js:540:21)
+    at Parser.parse (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\node_modules\stylus\lib\parser.js:158:23)
+    at Renderer.render (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\node_modules\stylus\lib\renderer.js:74:22)
+    at module.exports (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\lib\plugins\renderer\stylus.js:28:6)
+    at C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\lib\core\render.js:96:9
+    at fn (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:579:34)
+    at Object._onImmediate (C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\node_modules\async\lib\async.js:495:34)
+    at processImmediate [as _immediateCallback] (timers.js:330:15)
