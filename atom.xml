@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Infinity World]]></title>
+  <subtitle><![CDATA[Everyday I see my dream]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://biqing.me/"/>
+  <updated>2014-02-19T02:01:16.721Z</updated>
+  <id>http://biqing.me/</id>
+  
+  <author>
+    <name><![CDATA[Biqing Kwok]]></name>
+    <email><![CDATA[biqing.kwok@qq.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Infinity World: 重新起航]]></title>
+    <link href="http://biqing.me/2014/02/17/infinity-world-%E9%87%8D%E6%96%B0%E8%B5%B7%E8%88%AA/"/>
+    <id>http://biqing.me/2014/02/17/infinity-world-重新起航/</id>
+    <published>2014-02-17T09:04:47.000Z</published>
+    <updated>2014-02-18T03:07:33.000Z</updated>
+    <content type="html"><![CDATA[<figure class="highlight"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="keyword">false</span>, <span class="number">2</span>, <span class="string">''</span>, <span class="number">3</span>]);
+=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]
+</pre></td></tr></table></figure>
+]]></content>
+    
+    
+      <category term="test" scheme="http://biqing.me/tags/test/"/>
+    
+      <category term="test" scheme="http://biqing.me/categories/test/"/>
+    
+  </entry>
+  
+</feed>
