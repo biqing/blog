@@ -1,0 +1,25 @@
+<% if (theme.post_icon){ %>
+    <%
+    var name,
+        imgHTML,
+        hit = false;
+        categories = theme.post_categories;
+
+    if(item.categories && item.categories.length){
+        item.categories.forEach(function(cat){
+            if(!hit){
+                // 未命中
+                if(categories.indexOf(cat.name) != -1){
+                    name = cat.name;
+                    hit = true;
+                }
+            }
+        });
+    }
+    if(!name){
+        name = 'minions-' + Math.round(Math.random() * 22 + 1);
+    }
+    imgHTML = '<img height="56" src="/images/' + name + '.png">';
+    %>
+    <%- imgHTML %>
+<% } %>

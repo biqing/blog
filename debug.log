@@ -1,5 +1,5 @@
-date: 2014-02-19 09:59:19.787
-argv: node C:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\bin\hexo g --debug
+date: 2014-02-20 15:31:28.858
+argv: c:\Program Files\nodejs\node.exe c:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\bin\hexo s
 os: Windows_NT 6.1.7600 win32 ia32
 version:
   hexo: 2.4.5
@@ -13,27 +13,90 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 09:59:20.448 Configuration file load successfully
-[debug] 09:59:20.459 Version info checked successfully
-[debug] 09:59:20.527 Loading database.
-[debug] 09:59:20.590 Plugin loaded successfully: hexo-generator-feed
-[debug] 09:59:20.635 Theme layout loaded
-[debug] 09:59:20.658 Theme configuration loaded
-[debug] 09:59:20.971 Processed: about/index.md
-[debug] 09:59:21.024 Theme source loaded
-[debug] 09:59:21.036 Theme language files loaded
-[debug] 09:59:21.038 Processed: _posts/infinity-world-重新起航.md
-[debug] 09:59:21.044 Cache saved
-[info] 09:59:21.062 Files loaded in 0.468s
-[debug] 09:59:21.077 Public folder cleared: archives\index.html,archives\2014\index.html,archives\2014\02\index.html,categories\test\index.html,index.html,about\index.html,2014\02\17\infinity-world-重新起航\index.html,tags\test\index.html,favicon.ico,fancybox\blank.gif,fancybox\fancybox_loading.gif,fancybox\fancybox_loading@2x.gif,fancybox\fancybox_overlay.png,fancybox\fancybox_sprite.png,fancybox\fancybox_sprite@2x.png,fancybox\jquery.fancybox.css,fancybox\jquery.fancybox.pack.js,images\share.png,CNAME,css\skel-noscript.css,css\style-desktop.css,css\style-mobile.css,css\style-narrow.css,css\style-narrower.css,css\style-wide.css,css\style.css,css\tomorrow-night.css,css\font\fontawesome-webfont.eot,css\font\fontawesome-webfont.svg,css\font\fontawesome-webfont.woff,css\font\fontawesome-webfont.ttf,css\font\FontAwesome.otf,css\images\bg1.png,css\images\bg2.png,js\gallery.js,css\images\mobileUI-site-nav-opener-bg.svg,js\highlight.pack.js,js\html5shiv.js,js\jquery.imagesloaded.min.js,js\jquery.min.js,js\skel-panels.min.js,js\skel.min.js,js\init.js,js\styles\arta.css,js\styles\brown_paper.css,js\styles\ascetic.css,js\styles\brown_papersq.png,js\styles\dark.css,js\styles\default.css,js\styles\docco.css,js\styles\far.css,js\styles\foundation.css,js\styles\github.css,js\styles\googlecode.css,js\styles\idea.css,js\styles\ir_black.css,js\styles\magula.css,js\styles\mono-blue.css,js\styles\monokai.css,js\styles\monokai_sublime.css,js\styles\obsidian.css,js\styles\pojoaque.css,js\styles\pojoaque.jpg,js\styles\railscasts.css,js\styles\rainbow.css,js\styles\school_book.png,js\styles\solarized_dark.css,js\styles\solarized_light.css,js\styles\school_book.css,js\styles\tomorrow-night-blue.css,js\styles\sunburst.css,js\styles\tomorrow-night-bright.css,js\styles\tomorrow-night-eighties.css,js\styles\tomorrow-night.css,js\styles\tomorrow.css,js\styles\vs.css,js\styles\xcode.css,js\styles\zenburn.css,atom.xml
-[debug] 09:59:21.115 Render archive: archives/
-[debug] 09:59:21.118 Render archive: archives/2014/
-[debug] 09:59:21.121 Render archive: archives/2014/02/
-[debug] 09:59:21.123 Render category: categories/test/
-[debug] 09:59:21.125 Render index: 
-[debug] 09:59:21.128 Render page: about/index.html
-[debug] 09:59:21.130 Render post: 2014/02/17/infinity-world-重新起航/
-[debug] 09:59:21.134 Render tag: tags/test/
-[create] 09:59:21.247 Public: archives\index.html
-[create] 09:59:21.251 Public: atom.xml
-[create] 09:59:21.254 Public: archives\2014\index.html
+[debug] 15:24:12.445 Configuration file load successfully
+[debug] 15:24:12.449 Version info checked successfully
+[debug] 15:24:12.585 Plugin loaded successfully: hexo-generator-feed
+[debug] 15:24:12.606 Plugin loaded successfully: hexo-generator-sitemap
+[debug] 15:24:12.632 Theme layout loaded
+[debug] 15:24:12.639 Theme configuration loaded
+[debug] 15:24:12.689 Theme source loaded
+[debug] 15:24:12.690 Theme language files loaded
+[debug] 15:24:12.818 Processed: about/index.md
+[debug] 15:24:12.824 Processed: _posts/infinity-world-重新起航.md
+[debug] 15:24:12.829 Cache saved
+[info] 15:24:12.852 Hexo is running at localhost:80/. Press Ctrl+C to stop.
+[debug] 15:24:15.020 Render index: 
+[debug] 15:24:35.382 Render post: 2014/02/17/infinity-world-重新起航/
+[create] 15:30:25.723 Theme: source\images\minions-1.png
+[create] 15:30:25.725 Theme: source\images\minions-1.png
+[create] 15:30:25.726 Theme: source\images\minions-1.png
+[create] 15:30:25.727 Theme: source\images\minions-1.png
+[create] 15:30:25.728 Theme: source\images\minions-1.png
+[create] 15:30:32.896 Theme: source\images\minions-2.png.crdownload
+[create] 15:30:32.897 Theme: source\images\minions-2.png.crdownload
+[update] 15:30:32.902 Theme: source\images\minions-2.png.crdownload
+[update] 15:30:32.903 Theme: source\images\minions-2.png.crdownload
+[delete] 15:30:32.905 Theme: source\images\minions-2.png.crdownload
+[update] 15:30:32.907 Theme: source\images\minions-2.png.crdownload
+[update] 15:30:32.911 Theme: source\images\minions-2.png.crdownload
+[update] 15:30:32.912 Theme: source\images\minions-2.png.crdownload
+[create] 15:30:32.916 Theme: source\images\minions-2.png
+[create] 15:30:32.917 Theme: source\images\minions-2.png
+[create] 15:30:32.917 Theme: source\images\minions-2.png
+[create] 15:30:32.918 Theme: source\images\minions-2.png
+[create] 15:30:32.920 Theme: source\images\minions-2.png
+[create] 15:30:43.652 Theme: source\images\minions-3.png.crdownload
+[create] 15:30:43.653 Theme: source\images\minions-3.png.crdownload
+[update] 15:30:43.655 Theme: source\images\minions-3.png.crdownload
+[update] 15:30:43.658 Theme: source\images\minions-3.png.crdownload
+[delete] 15:30:43.662 Theme: source\images\minions-3.png.crdownload
+[update] 15:30:43.667 Theme: source\images\minions-3.png.crdownload
+[update] 15:30:43.670 Theme: source\images\minions-3.png.crdownload
+[update] 15:30:43.671 Theme: source\images\minions-3.png.crdownload
+[create] 15:30:43.674 Theme: source\images\minions-3.png
+[create] 15:30:43.676 Theme: source\images\minions-3.png
+[create] 15:30:43.677 Theme: source\images\minions-3.png
+[create] 15:30:43.678 Theme: source\images\minions-3.png
+[create] 15:30:43.679 Theme: source\images\minions-3.png
+[create] 15:30:53.292 Theme: source\images\minions-4.png
+[create] 15:30:53.293 Theme: source\images\minions-4.png
+[create] 15:30:53.294 Theme: source\images\minions-4.png
+[create] 15:30:53.294 Theme: source\images\minions-4.png
+[create] 15:30:53.295 Theme: source\images\minions-4.png
+[create] 15:31:04.422 Theme: source\images\minions-5.png.crdownload
+[create] 15:31:04.426 Theme: source\images\minions-5.png.crdownload
+[update] 15:31:04.430 Theme: source\images\minions-5.png.crdownload
+[update] 15:31:04.431 Theme: source\images\minions-5.png.crdownload
+[delete] 15:31:04.434 Theme: source\images\minions-5.png.crdownload
+[update] 15:31:04.439 Theme: source\images\minions-5.png.crdownload
+[update] 15:31:04.443 Theme: source\images\minions-5.png.crdownload
+[update] 15:31:04.444 Theme: source\images\minions-5.png.crdownload
+[create] 15:31:04.447 Theme: source\images\minions-5.png
+[create] 15:31:04.447 Theme: source\images\minions-5.png
+[create] 15:31:04.448 Theme: source\images\minions-5.png
+[create] 15:31:04.449 Theme: source\images\minions-5.png
+[create] 15:31:04.450 Theme: source\images\minions-5.png
+[create] 15:31:19.822 Theme: source\images\minions-6.png.crdownload
+[update] 15:31:19.827 Theme: source\images\minions-6.png.crdownload
+[update] 15:31:19.835 Theme: source\images\minions-6.png.crdownload
+[delete] 15:31:19.837 Theme: source\images\minions-6.png.crdownload
+[update] 15:31:19.840 Theme: source\images\minions-6.png.crdownload
+[update] 15:31:19.849 Theme: source\images\minions-6.png.crdownload
+[update] 15:31:19.849 Theme: source\images\minions-6.png.crdownload
+[create] 15:31:19.857 Theme: source\images\minions-6.png
+[create] 15:31:19.867 Theme: source\images\minions-6.png
+[create] 15:31:19.868 Theme: source\images\minions-6.png
+[create] 15:31:19.868 Theme: source\images\minions-6.png
+[create] 15:31:19.870 Theme: source\images\minions-6.png
+[create] 15:31:28.823 Theme: source\images\minions-7.png.crdownload
+[update] 15:31:28.837 Theme: source\images\minions-7.png.crdownload
+[update] 15:31:28.842 Theme: source\images\minions-7.png.crdownload
+[error] 15:31:28.844 Error: ENOENT, stat 'd:\Project\blog\themes\striped\source\images\minions-7.png.crdownload'
+Error: ENOENT, stat 'd:\Project\blog\themes\striped\source\images\minions-7.png.crdownload'
+
+[update] 15:31:28.848 Theme: source\images\minions-7.png.crdownload
+[update] 15:31:28.849 Theme: source\images\minions-7.png.crdownload
+[update] 15:31:28.849 Theme: source\images\minions-7.png.crdownload
+[delete] 15:31:28.852 Theme: source\images\minions-7.png.crdownload
+[create] 15:31:28.862 Theme: source\images\minions-7.png
+[create] 15:31:28.862 Theme: source\images\minions-7.png
