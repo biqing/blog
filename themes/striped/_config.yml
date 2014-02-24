@@ -37,7 +37,7 @@ baidu_share: true
 
 fancybox: true
 
-google_analytics:
+google_analytics: UA-48302825-1
 rss: /atom.xml
 
 comment_provider: disqus
