@@ -1,102 +1,38 @@
-date: 2014-02-20 15:31:28.858
-argv: c:\Program Files\nodejs\node.exe c:\Users\johnnyguo\AppData\Roaming\npm\node_modules\hexo\bin\hexo s
-os: Windows_NT 6.1.7600 win32 ia32
+date: 2014-04-26 22:05:35.181
+argv: node C:\Users\Johnny Kwok\AppData\Roaming\npm\node_modules\hexo\bin\hexo s
+os: Windows_NT 6.1.7601 win32 x64
 version:
   hexo: 2.4.5
   http_parser: 1.0
-  node: 0.10.21
+  node: 0.10.25
   v8: 3.14.5.9
   ares: 1.9.0-DEV
-  uv: 0.10.18
+  uv: 0.10.23
   zlib: 1.2.3
   modules: 11
   openssl: 1.0.1e
 ---
 
-[debug] 15:24:12.445 Configuration file load successfully
-[debug] 15:24:12.449 Version info checked successfully
-[debug] 15:24:12.585 Plugin loaded successfully: hexo-generator-feed
-[debug] 15:24:12.606 Plugin loaded successfully: hexo-generator-sitemap
-[debug] 15:24:12.632 Theme layout loaded
-[debug] 15:24:12.639 Theme configuration loaded
-[debug] 15:24:12.689 Theme source loaded
-[debug] 15:24:12.690 Theme language files loaded
-[debug] 15:24:12.818 Processed: about/index.md
-[debug] 15:24:12.824 Processed: _posts/infinity-world-重新起航.md
-[debug] 15:24:12.829 Cache saved
-[info] 15:24:12.852 Hexo is running at localhost:80/. Press Ctrl+C to stop.
-[debug] 15:24:15.020 Render index: 
-[debug] 15:24:35.382 Render post: 2014/02/17/infinity-world-重新起航/
-[create] 15:30:25.723 Theme: source\images\minions-1.png
-[create] 15:30:25.725 Theme: source\images\minions-1.png
-[create] 15:30:25.726 Theme: source\images\minions-1.png
-[create] 15:30:25.727 Theme: source\images\minions-1.png
-[create] 15:30:25.728 Theme: source\images\minions-1.png
-[create] 15:30:32.896 Theme: source\images\minions-2.png.crdownload
-[create] 15:30:32.897 Theme: source\images\minions-2.png.crdownload
-[update] 15:30:32.902 Theme: source\images\minions-2.png.crdownload
-[update] 15:30:32.903 Theme: source\images\minions-2.png.crdownload
-[delete] 15:30:32.905 Theme: source\images\minions-2.png.crdownload
-[update] 15:30:32.907 Theme: source\images\minions-2.png.crdownload
-[update] 15:30:32.911 Theme: source\images\minions-2.png.crdownload
-[update] 15:30:32.912 Theme: source\images\minions-2.png.crdownload
-[create] 15:30:32.916 Theme: source\images\minions-2.png
-[create] 15:30:32.917 Theme: source\images\minions-2.png
-[create] 15:30:32.917 Theme: source\images\minions-2.png
-[create] 15:30:32.918 Theme: source\images\minions-2.png
-[create] 15:30:32.920 Theme: source\images\minions-2.png
-[create] 15:30:43.652 Theme: source\images\minions-3.png.crdownload
-[create] 15:30:43.653 Theme: source\images\minions-3.png.crdownload
-[update] 15:30:43.655 Theme: source\images\minions-3.png.crdownload
-[update] 15:30:43.658 Theme: source\images\minions-3.png.crdownload
-[delete] 15:30:43.662 Theme: source\images\minions-3.png.crdownload
-[update] 15:30:43.667 Theme: source\images\minions-3.png.crdownload
-[update] 15:30:43.670 Theme: source\images\minions-3.png.crdownload
-[update] 15:30:43.671 Theme: source\images\minions-3.png.crdownload
-[create] 15:30:43.674 Theme: source\images\minions-3.png
-[create] 15:30:43.676 Theme: source\images\minions-3.png
-[create] 15:30:43.677 Theme: source\images\minions-3.png
-[create] 15:30:43.678 Theme: source\images\minions-3.png
-[create] 15:30:43.679 Theme: source\images\minions-3.png
-[create] 15:30:53.292 Theme: source\images\minions-4.png
-[create] 15:30:53.293 Theme: source\images\minions-4.png
-[create] 15:30:53.294 Theme: source\images\minions-4.png
-[create] 15:30:53.294 Theme: source\images\minions-4.png
-[create] 15:30:53.295 Theme: source\images\minions-4.png
-[create] 15:31:04.422 Theme: source\images\minions-5.png.crdownload
-[create] 15:31:04.426 Theme: source\images\minions-5.png.crdownload
-[update] 15:31:04.430 Theme: source\images\minions-5.png.crdownload
-[update] 15:31:04.431 Theme: source\images\minions-5.png.crdownload
-[delete] 15:31:04.434 Theme: source\images\minions-5.png.crdownload
-[update] 15:31:04.439 Theme: source\images\minions-5.png.crdownload
-[update] 15:31:04.443 Theme: source\images\minions-5.png.crdownload
-[update] 15:31:04.444 Theme: source\images\minions-5.png.crdownload
-[create] 15:31:04.447 Theme: source\images\minions-5.png
-[create] 15:31:04.447 Theme: source\images\minions-5.png
-[create] 15:31:04.448 Theme: source\images\minions-5.png
-[create] 15:31:04.449 Theme: source\images\minions-5.png
-[create] 15:31:04.450 Theme: source\images\minions-5.png
-[create] 15:31:19.822 Theme: source\images\minions-6.png.crdownload
-[update] 15:31:19.827 Theme: source\images\minions-6.png.crdownload
-[update] 15:31:19.835 Theme: source\images\minions-6.png.crdownload
-[delete] 15:31:19.837 Theme: source\images\minions-6.png.crdownload
-[update] 15:31:19.840 Theme: source\images\minions-6.png.crdownload
-[update] 15:31:19.849 Theme: source\images\minions-6.png.crdownload
-[update] 15:31:19.849 Theme: source\images\minions-6.png.crdownload
-[create] 15:31:19.857 Theme: source\images\minions-6.png
-[create] 15:31:19.867 Theme: source\images\minions-6.png
-[create] 15:31:19.868 Theme: source\images\minions-6.png
-[create] 15:31:19.868 Theme: source\images\minions-6.png
-[create] 15:31:19.870 Theme: source\images\minions-6.png
-[create] 15:31:28.823 Theme: source\images\minions-7.png.crdownload
-[update] 15:31:28.837 Theme: source\images\minions-7.png.crdownload
-[update] 15:31:28.842 Theme: source\images\minions-7.png.crdownload
-[error] 15:31:28.844 Error: ENOENT, stat 'd:\Project\blog\themes\striped\source\images\minions-7.png.crdownload'
-Error: ENOENT, stat 'd:\Project\blog\themes\striped\source\images\minions-7.png.crdownload'
-
-[update] 15:31:28.848 Theme: source\images\minions-7.png.crdownload
-[update] 15:31:28.849 Theme: source\images\minions-7.png.crdownload
-[update] 15:31:28.849 Theme: source\images\minions-7.png.crdownload
-[delete] 15:31:28.852 Theme: source\images\minions-7.png.crdownload
-[create] 15:31:28.862 Theme: source\images\minions-7.png
-[create] 15:31:28.862 Theme: source\images\minions-7.png
+[debug] 22:01:29.616 Configuration file load successfully
+[debug] 22:01:29.619 Version info checked successfully
+[debug] 22:01:29.659 Loading database.
+[debug] 22:01:29.712 Theme layout loaded
+[debug] 22:01:29.789 Theme configuration loaded
+[debug] 22:01:29.810 Theme source loaded
+[debug] 22:01:29.819 Theme language files loaded
+[debug] 22:01:29.830 Processed: 404.html
+[debug] 22:01:29.833 Processed: about/index.md
+[debug] 22:01:29.837 Processed: _posts/infinity-world-restart.md
+[debug] 22:01:29.839 Processed: requirejs/index.html
+[debug] 22:01:29.845 Cache saved
+[info] 22:01:29.868 Hexo is running at localhost:80/. Press Ctrl+C to stop.
+[info] 22:02:25.446 addDir Theme: %s source\js\requirejs\新建文件夹
+[info] 22:02:27.247 unlinkDir Theme: %s source\js\requirejs\新建文件夹
+[info] 22:02:27.258 addDir Theme: %s source\js\requirejs\lib
+[info] 22:02:27.259 addDir Theme: %s source\js\requirejs\lib
+[info] 22:05:29.819 addDir Theme: %s source\css\requirejs\新建文件夹
+[info] 22:05:32.838 unlinkDir Theme: %s source\css\requirejs\新建文件夹
+[info] 22:05:32.852 addDir Theme: %s source\css\requirejs\font
+[info] 22:05:32.853 addDir Theme: %s source\css\requirejs\font
+[error] 22:05:35.155 Error: ENOENT, readdir 'C:\Users\Johnny Kwok\Documents\GitHub\blog\themes\striped\source\css\requirejs\新建文件夹'
+Error: ENOENT, readdir 'C:\Users\Johnny Kwok\Documents\GitHub\blog\themes\striped\source\css\requirejs\新建文件夹'

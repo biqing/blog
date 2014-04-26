@@ -1,16 +1,20 @@
-<%- partial('_partial/head') %>
+<% if(page.layout == 'requirejs') { %>
+  <%- body %>
+<% } else { %>
+  <%- partial('_partial/head') %>
 
-<body class="left-sidebar">
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <!-- Content -->
-    <div id="content">
-      <div id="content-inner">
-        <%- body %>
+  <body class="left-sidebar">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Content -->
+      <div id="content">
+        <div id="content-inner">
+          <%- body %>
+        </div>
       </div>
+      <%- partial('_partial/sidebar') %>
+      <%- partial('_partial/after_footer') %>
     </div>
-    <%- partial('_partial/sidebar') %>
-    <%- partial('_partial/after_footer') %>
-  </div>
-</body>
-</html>
+  </body>
+  </html>
+<% } %>
