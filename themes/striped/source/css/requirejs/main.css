@@ -15,7 +15,7 @@ body {
     font-size: 12px;
     line-height: 21px;
     background-color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
     color: #0a0a0a;
 }
 
@@ -60,7 +60,7 @@ pre {
 }
 
 .serif {
-    font-family: "Georgia", Times New Roman, Times, serif;
+    font-family: "Georgia", "微软雅黑", Times New Roman, Times, serif;
 }
 
 a {
@@ -217,7 +217,7 @@ span.icon.fork {
     margin: 0 0 0 220px;
     padding: 0 20px;
     background-color: #fff;
-    font-family: "Georgia", Times New Roman, Times, serif;
+    font-family: "Georgia", "微软雅黑", Times New Roman, Times, serif;
     position: relative;
 }
 
@@ -310,7 +310,7 @@ span.sectionMark {
     border: none;
     list-style-position: inside;
     padding: 0;
-    font-family: "Georgia", Times New Roman, Times, serif;
+    font-family: "Georgia", "微软雅黑", Times New Roman, Times, serif;
 }
 
 #content ul ul,

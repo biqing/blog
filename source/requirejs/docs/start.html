@@ -36,9 +36,9 @@ title: 如何使用 RequireJS
         <span class="sectionMark">&sect; 2</span>
     </h2>
 
-    <span class="note">注意: 针对于 jQuery 的建议，见 <a href="jquery.html">jQuery 集成页面</a></span>
+    <span class="note">注意: 针对于 jQuery 的建议，见 <a href="jquery.html">如何与 jQuery 集成页面</a></span>
 
-    <p>This setup assumes you keep all your JavaScript files in a "scripts" directory in your project. For example, if you have a project that has an project.html page, with some scripts, the directory layout might look like so:</p>
+    <p>首先我们假设你会把所有的 JavaScript 文件都放在项目的 "scripts" 目录中。现在假设你有一个项目，项目中有一个 project.html 文件，还有一些脚本文件，那么此时的目录结构应该是这个样子：</p>
 
     <ul>
         <li>project-directory/
@@ -55,7 +55,7 @@ title: 如何使用 RequireJS
         </ul></li>
     </ul>
 
-    <p>添加 require.js 到 scripts 目录, 它看起来应该是这样的:</p>
+    <p>添加 require.js 到 scripts 目录，它看起来应该是这样的：</p>
 
     <ul>
         <li>project-directory/
@@ -73,7 +73,7 @@ title: 如何使用 RequireJS
         </ul></li>
     </ul>
 
-    <p>To take full advantage of the optimization tool, it is suggested that you keep all inline script out of the HTML, and only reference require.js with a require call like so to load your script:</p>
+    <p>若要充分发挥优化工具的作用，建议把 HTML 中内联的脚本都移除出去，仅引用 require.js 并使用 require 来加载脚本：</p>
 
     <pre><code>&lt;!DOCTYPE html&gt;
     &lt;html&gt;
@@ -89,19 +89,18 @@ title: 如何使用 RequireJS
     &lt;/html&gt;
     </code></pre>
 
-    <p>Inside of main.js, you can use require() to load any other scripts you need to run. This ensures a single entry point, since <a href="api.html#data-main">the data-main script you specify is loaded asynchronously</a>.</p>
+    <p>在 main.js 中，可以使用 require() 来加载其他需要的脚本。这保证了单一的入口，因为 <a href="api.html#data-main">data-main 指定的脚本是异步加载的</a>。</p>
 
     <pre><code>require(["helper/util"], function(util) {
-        //This function is called when scripts/helper/util.js is loaded.
-        //If util.js calls define(), then this function is not fired until
-        //util's dependencies have loaded, and the util argument will hold
-        //the module value for "helper/util".
+        // 这个函数会在 scripts/helper/util.js 加载完成后调用。
+        // 如果 util.js 调用 define(), 那么这个函数会在
+        // util 的依赖（脚本）加载完成后调用，
+        // util 参数会一直保持着模块 "helper/util" 的值。
     });
     </code></pre>
 
-    <p>That will load the helper/util.js script. To get full advantage of RequireJS,
-    see the <a href="api.html">API docs</a> to learn more about defining and using
-    modules.</p>
+    <p>这样就可以加载 helper/util.js 脚本了。要充分使用 RequireJS 的能力，
+    查看 <a href="api.html">API 文档</a>了解更多关于定义与使用模块的信息。</p>
 
     </div>
 
@@ -111,5 +110,5 @@ title: 如何使用 RequireJS
         <span class="sectionMark">&sect; 3</span>
     </h2>
 
-    <p>Once you are finished doing development and want to deploy your code for your end users, you can use the <a href="optimization.html">optimizer</a> to combine the JavaScript files together and minify it. In the example above, it can combine main.js and helper/util.js into one file and minify the result.</p>
+    <p>一旦完成了开发，准备将代码发布到用户侧，可以使用 <a href="optimization.html">optimizer（优化工具）</a> 将 JavaScript 文件合并在一起，并且进行压缩。在上面的例子中，优化工具可以将 main.js 和 helper/util.js 合并到一个文件，然后对合并结果进行压缩。</p>
 </div>
