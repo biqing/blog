@@ -86,16 +86,16 @@ title: RequireJS API
 <span class="sectionMark">§ 1.1</span>
 </h3>
 
-        <p>RequireJS 使用了不同于传统 &lt;script&gt; 标签的方法来加载脚本。While it can also run fast and optimize well, the primary goal is to encourage modular code. As part of that, it encourages using <strong>module IDs</strong> instead of URLs for script tags.</p>
+        <p>RequireJS 使用了不同于传统 &lt;script&gt; 标签的方法来加载脚本。虽然它可以运行得很快，而且优化得很好，但其主要目标是鼓励模块化地编码。作为其中的一部分，它鼓励使用<strong>模块 ID</strong>来替代 script 标签中的 URL 。</p>
 
-        <p>RequireJS loads all code relative to a <a href="#config-baseUrl">baseUrl</a>. The baseUrl is normally set to the same directory as the script used in a data-main attribute for the top level script to load for a page. The <a href="#data-main">data-main attribute</a> is a special attribute that require.js will check to start script loading. This example will end up with a baseUrl of <strong>scripts</strong>:</p>
+        <p>RequireJS 加载所有与 <a href="#config-baseUrl">baseUrl</a> 相关的代码。data-main 属性指定的脚本，是加载一个页面最高层级的脚本，而 baseUrl 通常设置为与其相同的目录。<a href="#data-main">data-main 属性</a> 是一个特殊的属性， require.js 在开始加载脚本时会检查该属性。这个是一个<strong>脚本</strong> baseUrl 的例子：</p>
 
-        <pre><code class="html"><span class="comment">&lt;!--This sets the baseUrl to the "scripts" directory, and
-    loads a script that will have a module ID of 'main'--&gt;</span>
+        <pre><code class="html"><span class="comment">&lt;!--这里将 baseUrl 设置为 "scripts" 目录, 并且
+    加载一个脚本， 它将具有一个模块 ID 'main'--&gt;</span>
 <span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> data-main=<span class="value">"scripts/main.js"</span></span><span class="attribute"> src=<span class="value">"scripts/require.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>
 </code></pre>
 
-        <p>Or, baseUrl can be set manually via the <a href="#config">RequireJS config</a>. If there is no explicit config and data-main is not used, then the default baseUrl is the directory that contains the HTML page running RequireJS.</p>
+        <p>baseUrl 也可以通过 <a href="#config">RequireJS config</a> 来手动配置。如果没有明确的配置，并且未使用 data-main 属性，baseUrl 将默认设置为运行 RequireJS 的 HTML 页面所在的目录。</p>
 
         <p>RequireJS also assumes by default that all dependencies are scripts, so it does not expect to see a trailing ".js" suffix on module IDs. RequireJS will automatically add it when translating the module ID to a path. With the <a href="#config-paths">paths config</a>, you can set up locations of a group of scripts. All of these capabilities allow you to use smaller strings for scripts as compared to traditional &lt;script&gt; tags.</p>
 

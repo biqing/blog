@@ -95,11 +95,11 @@ title: 如何使用 RequireJS
         // 这个函数会在 scripts/helper/util.js 加载完成后调用。
         // 如果 util.js 调用 define(), 那么这个函数会在
         // util 的依赖（脚本）加载完成后调用，
-        // util 参数会一直保持着模块 "helper/util" 的值。
+        // util 参数将一直保持着模块 "helper/util" 的返回值。
     });
     </code></pre>
 
-    <p>这样就可以加载 helper/util.js 脚本了。要充分使用 RequireJS 的能力，
+    <p>这样就完成了 helper/util.js 脚本的加载。要充分使用 RequireJS 的能力，
     查看 <a href="api.html">API 文档</a>了解更多关于定义与使用模块的信息。</p>
 
     </div>
@@ -110,5 +110,5 @@ title: 如何使用 RequireJS
         <span class="sectionMark">&sect; 3</span>
     </h2>
 
-    <p>一旦完成了开发，准备将代码发布到用户侧，可以使用 <a href="optimization.html">optimizer（优化工具）</a> 将 JavaScript 文件合并在一起，并且进行压缩。在上面的例子中，优化工具可以将 main.js 和 helper/util.js 合并到一个文件，然后对合并结果进行压缩。</p>
+    <p>一旦完成了开发，准备将代码发布到用户端，可以使用 <a href="optimization.html">optimizer（优化工具）</a> 将 JavaScript 文件合并在一起，并且进行压缩。在上面的例子中，优化工具可以将 main.js 和 helper/util.js 合并到一个文件，然后对合并结果进行压缩。</p>
 </div>
