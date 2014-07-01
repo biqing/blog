@@ -29,10 +29,10 @@ title: 下载 RequireJS
 
         <div class="subSection">
             <h4 class="hbox">
-            <a name="requirejs">require.js 2.1.11</a>
+            <a name="requirejs">require.js 2.1.14</a>
             <span class="boxFlex"></span>
-            <a class="download" href="http://requirejs.org/docs/release/2.1.11/minified/require.js">压缩版</a>
-            <a class="download" href="http://requirejs.org/docs/release/2.1.11/comments/require.js">完整版</a>
+            <a class="download" href="http://requirejs.org/docs/release/2.1.14/minified/require.js">压缩版</a>
+            <a class="download" href="http://requirejs.org/docs/release/2.1.14/comments/require.js">完整版</a>
             </h4>
 
             <p>你要做的只是在浏览器中使用 require.js。</p>
@@ -42,14 +42,14 @@ title: 下载 RequireJS
             <h4 class="hbox">
             <a name="rjs">r.js: Optimizer and Node/Rhino/xpcshell adapter</a>
             <span class="boxFlex"></span>
-            <a class="download" href="http://requirejs.org/docs/release/2.1.11/r.js">下载</a>
+            <a class="download" href="http://requirejs.org/docs/release/2.1.14/r.js">下载</a>
             </h4>
 
             <p>r.js 允许你在Node，Rhino 或 xpcshell 中运行模块和优化工具。</p>
 
-            <p>If you are running in Node, and want to use npm to install this file via npm, see the <a href="node.html">Use with Node</a> page for more information.</p>
+            <p>如果你在 Node 中运行，并且希望通过 npm 来安装这个文件，参见 <a href="node.html">与 Node 使用</a> 页面。</p>
 
-            <p>For information on its use, as well as how to get the JAR files to run it under Rhino, see the <a href="https://github.com/jrburke/r.js">r.js README</a>.</p>
+            <p>有关它的使用信息，以及如果让 JAR 文件在 Rhino 下运行，参见 <a href="https://github.com/jrburke/r.js">r.js README</a>.</p>
 
         </div>
 
@@ -106,6 +106,22 @@ title: 下载 RequireJS
     <div class="section">
         <h2><a name="releasenotes">版本日志</a><span class="sectionMark">§ 3</span></h2>
 
+        <h3 id="2-1-14">2.1.14</h3>
+
+        <p>A couple more regression fixes for 2.1.12. One to <a href="https://github.com/jrburke/requirejs/issues/1131">fix nested plugin ID normalization</a>, like "pluginA!pluginbB!resource", and one for the <a href="https://github.com/jrburke/requirejs/issues/1133">optimizer incorrectly detecting UMD wrapped code</a>.</p>
+
+        <h3 id="2-1-13">2.1.13</h3>
+
+        <p>Version 2.1.12 regressed around ID normalization. <a href="https://github.com/jrburke/requirejs/issues/1129">2.1.13 fixes that regression</a>, and it is recommended that you do not use 2.1.12, but use 2.1.13 instead.</p>
+
+        <h3 id="2-1-12">2.1.12</h3>
+
+        <p>Just a bug fix/maintenance release. Full list of changes:</p>
+
+        <ul>
+            <li><a href="https://github.com/jrburke/requirejs/issues?milestone=34&page=1&state=closed">Fixed require.js issues</a></li>
+            <li><a href="https://github.com/jrburke/r.js/issues?milestone=31&page=1&state=closed">Fixed r.js optimizer issues</a></li>
+        </ul>
 
         <h3 id="2-1-11">2.1.11</h3>
 

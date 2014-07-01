@@ -86,30 +86,30 @@ title: RequireJS API
 <span class="sectionMark">§ 1.1</span>
 </h3>
 
-        <p>RequireJS 使用了不同于传统 &lt;script&gt; 标签的方法来加载脚本。虽然它可以运行得很快，而且优化得很好，但其主要目标是鼓励模块化地编码。作为其中的一部分，它鼓励使用<strong>模块 ID</strong>来替代 script 标签中的 URL 。</p>
+        <p>RequireJS 使用了不同于传统 &lt;script&gt; 标签的方法来加载脚本。它可以运行得很快，而且优化得很好，但其主要目标还是鼓励模块化地编码。作为其中的一部分，它鼓励使用<strong>模块 ID</strong>来替代 script 标签中的 URL 。</p>
 
-        <p>RequireJS 加载所有与 <a href="#config-baseUrl">baseUrl</a> 相关的代码。data-main 属性指定的脚本，是加载一个页面最高层级的脚本，而 baseUrl 通常设置为与其相同的目录。<a href="#data-main">data-main 属性</a> 是一个特殊的属性， require.js 在开始加载脚本时会检查该属性。这个是一个<strong>脚本</strong> baseUrl 的例子：</p>
+        <p>RequireJS 加载所有与 <a href="#config-baseUrl">baseUrl</a> 相关的代码。data-main 属性指定的脚本，是加载一个页面最高层级的脚本，而 baseUrl 通常设置为与其相同的目录。<a href="#data-main">data-main 属性</a> 是一个特殊的属性， require.js 在开始加载脚本时会检查该属性。下面是一个<strong>脚本</strong> baseUrl 的例子：</p>
 
-        <pre><code class="html"><span class="comment">&lt;!--这里将 baseUrl 设置为 "scripts" 目录, 并且
+        <pre><code class="html"><span class="comment">&lt;!--这里将 baseUrl 设置为 “scripts” 目录, 并且
     加载一个脚本， 它将具有一个模块 ID 'main'--&gt;</span>
 <span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> data-main=<span class="value">"scripts/main.js"</span></span><span class="attribute"> src=<span class="value">"scripts/require.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>
 </code></pre>
 
         <p>baseUrl 也可以通过 <a href="#config">RequireJS config</a> 来手动配置。如果没有明确的配置，并且未使用 data-main 属性，baseUrl 将默认设置为运行 RequireJS 的 HTML 页面所在的目录。</p>
 
-        <p>RequireJS also assumes by default that all dependencies are scripts, so it does not expect to see a trailing ".js" suffix on module IDs. RequireJS will automatically add it when translating the module ID to a path. With the <a href="#config-paths">paths config</a>, you can set up locations of a group of scripts. All of these capabilities allow you to use smaller strings for scripts as compared to traditional &lt;script&gt; tags.</p>
+        <p>RequireJS 默认假设所有的依赖项都是脚本，因此它不期望在模块 ID 中看到 “.js” 的后缀。RequireJS 会在将模块 ID 转换为路径时，自动补全 “.js” 后缀。通过 <a href="#config-paths">paths 配置</a>，还可以为一组脚本设置路径。相对于传统的 &lt;script&gt; 标签，这些能力可以让你使用更少的字符来加载脚本。</p>
 
-        <p>There may be times when you do want to reference a script directly and not conform to the "baseUrl + paths" rules for finding it. If a module ID has one of the following characteristics, the ID will not be passed through the "baseUrl + paths" configuration, and just be treated like a regular URL that is relative to the document:</p>
+        <p>有时你想直接引用一个脚本，不使用 “baseUrl + paths” 的规则来加载它。如果一个模块 ID 包含下面的字符，ID 将不会使用 “baseUrl + paths” 的配置，而将它当作一个以文档为相对路径的普通 URL：:</p>
 
         <ul>
-            <li>Ends in ".js".</li>
-            <li>Starts with a "/".</li>
-            <li>Contains an URL protocol, like "http:" or "https:".</li>
+            <li>以 “.js” 结尾；</li>
+            <li>以 “/” 开头；</li>
+            <li>包含 URL 协议，如 “http:” 或 “https:”。</li>
         </ul>
 
-        <p>In general though, it is best to use the baseUrl and "paths" config to set paths for module IDs. By doing so, it gives you more flexibility in renaming and configuring the paths to different locations for optimization builds.</p>
+        <p>但总的来说，使用 baseUrl 和 “paths” 配置来为模块 ID 设置路径是最好的方式。因为这样可以更灵活地重命名模块，以及为优化构建配置不同的路径。</p>
 
-        <p>Similarly, to avoid a bunch of configuration, it is best to avoid deep folder hierarchies for scripts, and instead either keep all the scripts in baseUrl, or if you want to separate your library/vendor-supplied code from your app code, use a directory layout like this:</p>
+        <p>类似地，为了避免繁冗的配置，最好避免深度的脚本目录结构，而将所有脚本保持在 baseUrl 下。如果想把第三方的代码分离出你的脚本，可以使用下面这样的目录结构：</p>
 
         <ul>
             <li>www/
@@ -135,79 +135,78 @@ title: RequireJS API
             </li>
         </ul>
 
-        <p>in index.html:</p>
+        <p>在 index.html 中：</p>
 
         <pre><code class="html"><span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> data-main=<span class="value">"js/app.js"</span></span><span class="attribute"> src=<span class="value">"js/require.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span></code></pre>
 
-        <p>and in app.js:</p>
+        <p>在 app.js 中：</p>
 
         <pre><code class="javascript">requirejs.config({
-    <span class="comment">//By default load any module IDs from js/lib</span>
+    <span class="comment">// 默认从 js/lib 加载所有模块 ID</span>
     baseUrl: <span class="string">'js/lib'</span>,
-    <span class="comment">//except, if the module ID starts with "app",</span>
-    <span class="comment">//load it from the js/app directory. paths</span>
-    <span class="comment">//config is relative to the baseUrl, and</span>
-    <span class="comment">//never includes a ".js" extension since</span>
-    <span class="comment">//the paths config could be for a directory.</span>
+    <span class="comment">// 除非，模块 ID 以 “app” 开头，</span>
+    <span class="comment">// 从 js/app 目录加载它。</span>
+    <span class="comment">// path 配置是相对于 baseUrl的，</span>
+    <span class="comment">// 并且不包含 “.js” 扩展名，</span>
+    <span class="comment">// 因为 path 配置可能是一个目录。</span>
     paths: {
         app: <span class="string">'../app'</span>
     }
 });
 
-<span class="comment">// Start the main app logic.</span>
+<span class="comment">// 开始应用主逻辑。</span>
 requirejs([<span class="string">'jquery'</span>, <span class="string">'canvas'</span>, <span class="string">'app/sub'</span>],
-<span class="function"><span class="keyword">function</span>   <span class="params">($,        canvas,   sub)</span> {</span>
-    <span class="comment">//jQuery, canvas and the app/sub module are all</span>
-    <span class="comment">//loaded and can be used here now.</span>
+<span class="function"><span class="keyword">function</span> <span class="params">($, canvas, sub)</span> {</span>
+    <span class="comment">// jQuery，canvas 以及 app/sub 模块都已加载，并可以在这使用了。</span>
 });
 </code></pre>
 
-        <p>Notice as part of that example, vendor libraries like jQuery did not have their version numbers in their file names. It is recommended to store that version info in a separate text file if you want to track it, or if you use a tool like <a href="https://github.com/volojs/volo">volo</a>, it will stamp the package.json with the version information but keep the file on disk as "jquery.js". This allows you to have the very minimal configuration instead of having to put an entry in the "paths" config for each library. For instance, configure "jquery" to be "jquery-1.7.2".</p>
+        <p>注意上面的例子，jQuery 这样的第三方库文件中没有出现版本号。如果需要记录，建议将版本号存储到独立的文本文件中，或者使用 <a href="https://github.com/volojs/volo">volo</a> 这样的工具，它会在 package.json 中打上版本号，但在硬盘上保存文件为 “jquery.js”。这允许你使用最少的配置，而不用为每个第三方库进行 “paths” 配置。例如，配置 “jquery” 为 “jquery-1.7.2”。</p>
 
-        <p>Ideally the scripts you load will be modules that are defined by calling <a href="#define">define()</a>. However, you may need to use some traditional/legacy "browser globals" scripts that do not express their dependencies via define(). For those, you can use the <a href="#config-shim">shim config</a>. To properly express their dependencies.</p>
+        <p>理想情况下，你加载的脚本都是通过 <a href="#define">define()</a> 定义的模块。但你也许需要一些传统/遗留的那些，未通过 define() 来定义依赖项的“浏览器全局变量”脚本。这种情况，可以使用 <a href="#config-shim">shim config</a> 来正确地定义依赖。</p>
 
-        <p>If you do not express the dependencies, you will likely get loading errors since RequireJS loads scripts asynchronously and out of order for speed.</p>
+        <p>如果你没有定义依赖，可能会出现加载错误，因为 RequireJS 会为了速度而异步无序加载。</p>
 
         <h3>
-<a href="#data-main" name="data-main">data-main Entry Point</a>
+<a href="#data-main" name="data-main">data-main 入口</a>
 <span class="sectionMark">§ 1.2</span>
 </h3>
 
-        <p>The data-main attribute is a special attribute that require.js will check to start script loading:</p>
+        <p>data-main 属性是一个特殊的属性，require.js 会检测它来开始加载脚本：</p>
 
-        <pre><code class="html"><span class="comment">&lt;!--when require.js loads it will inject another script tag
-    (with async attribute) for scripts/main.js--&gt;</span>
+        <pre><code class="html"><span class="comment">&lt;!-- 当 require.js 加载后，会为 scripts/main.js
+         注入一个 script 标签(带有 async 属性) --&gt;</span>
 <span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> data-main=<span class="value">"scripts/main"</span></span><span class="attribute"> src=<span class="value">"scripts/require.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>
 </code></pre>
 
-        <p>You will typically use a data-main script to <a href="#config">set configuration options</a> and then load the first application module. Note: the script tag require.js generates for your data-main module includes the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-async">async attribute</a>. This means that <strong>you cannot assume that the load and execution of your data-main script will finish prior to other scripts referenced later in the same page.</strong>
+        <p>你会通常使用 data-main 脚本来<a href="#config">设置配置项</a>，然后加载应用的第一个模块。注意：require.js 为 data-main 模块生成的 script 标签包含 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attr-async">async 属性</a>。这意味着<strong>你不能假设 data-main 脚本的加载与执行，会在同页面后面引用的脚本前结束。</strong>
         </p>
 
-        <p>For example, this arrangement will fail randomly when the require.config path for the 'foo' module has not been set prior to it being require()'d later:</p>
+        <p>例如，当 require.config 的 'foo' 模块路径没有在它被 require() 前设置，这样的写法会概率性地失败：</p>
 
         <pre><code class="html"><span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> data-main=<span class="value">"scripts/main"</span></span><span class="attribute"> src=<span class="value">"scripts/require.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>
 <span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> src=<span class="value">"scripts/other.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>
 </code></pre>
 
-        <pre><code class="javascript"><span class="comment">// contents of main.js:</span>
+        <pre><code class="javascript"><span class="comment">// main.js的内容：</span>
 require.config({
     paths: {
         foo: <span class="string">'libs/foo-1.1.3'</span>
     }
 });
 </code></pre>
-        <pre><code class="javascript"><span class="comment">// contents of other.js:</span>
+        <pre><code class="javascript"><span class="comment">// other.js的内容：</span>
 
-<span class="comment">// This code might be called before the require.config() in main.js</span>
-<span class="comment">// has executed. When that happens, require.js will attempt to</span>
-<span class="comment">// load 'scripts/foo.js' instead of 'scripts/libs/foo-1.1.3.js'</span>
+<span class="comment">// 这段代码可能会在 main.js 中的 require.config() 执行前被调用。</span>
+<span class="comment">// 这种情况下，require.js 会尝试加载 'scripts/foo.js'</span>
+<span class="comment">// 而不是 'scripts/libs/foo-1.1.3.js'</span>
 require( [<span class="string">'foo'</span>], <span class="function"><span class="keyword">function</span><span class="params">( foo )</span> {</span>
 
 });
 </code></pre>
 
         <h3>
-<a href="#define" name="define">Define a Module</a>
+<a href="#define" name="define">定义模块</a>
 <span class="sectionMark">§ 1.3</span>
 </h3>
 
