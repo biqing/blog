@@ -5,3 +5,4 @@ debug.log
 .deploy
 public/*
 node_modules
+*.log
