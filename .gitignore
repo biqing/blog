@@ -6,3 +6,4 @@ debug.log
 public/*
 node_modules
 *.log
+debug.log
