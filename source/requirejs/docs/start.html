@@ -82,8 +82,8 @@ title: 如何使用 RequireJS
     &lt;html&gt;
         &lt;head&gt;
             &lt;title&gt;My Sample Project&lt;/title&gt;
-            &lt;!-- data-main attribute tells require.js to load
-                 scripts/main.js after require.js loads. --&gt;
+            &lt;!-- data-main 属性告诉 require.js 当 require.js
+                加载完成时去加载 scripts/main.js --&gt;
             &lt;script data-main="scripts/main" src="scripts/require.js"&gt;&lt;/script&gt;
         &lt;/head&gt;
         &lt;body&gt;
@@ -91,6 +91,8 @@ title: 如何使用 RequireJS
         &lt;/body&gt;
     &lt;/html&gt;
     </code></pre>
+
+    <p>如果不希望 require.js 阻塞渲染，也可以将脚本放置在 &lt;body&gt; 部分的底端。还可以在支持 <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/script#Attributes">async 属性</a>的浏览器中，为脚本标签加上加上 async 属性。</p>
 
     <p>在 main.js 中，可以使用 require() 来加载其他需要的脚本。这保证了单一的入口，因为 <a href="api.html#data-main">data-main 指定的脚本是异步加载的</a>。</p>
 
