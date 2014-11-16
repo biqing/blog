@@ -286,7 +286,7 @@ define([<span class="string">"./cart"</span>, <span class="string">"./inventory"
 
             <p>定义函数调用上述的两个参数，“cart” 和 “inventory”。 它们是 “./cart” 和 “./inventory” 代表的模块。</p>
 
-            <p>当 my/cart 和 my/inventory 模块加载后，定义函数接收到 “cart” and “inventory” 模块参数后，定义函数才会被调用。</p>
+            <p>当 my/cart 和 my/inventory 模块加载后，定义函数接收到 “cart” 和 “inventory” 模块参数后，定义函数才会被调用。</p>
 
             <p>明确不鼓励在模块中定义全局变量，这样一个模块的多个版本才可以同时存在于页面中（参见 <strong>高阶使用</strong>）。同时，函数的参数顺序也应与依赖顺序保持一致。</p>
 
@@ -392,19 +392,19 @@ define([<span class="string">"my/cart"</span>, <span class="string">"my/inventor
             <pre><code class="javascript">require(<span class="string">"module/name"</span>).callSomeFunction()
 </code></pre>
 
-            <p>Note this only works if "module/name" was previously loaded via the async version of require: require(["module/name"]). If using a relative path, like './module/name', those only work inside define</p>
+            <p>注意，这只会在 "module/name" 已经先前通过 require(["module/name"]) 异步地加载到本地才会奏效。如果使用了相对路径，如 './module/name'，那么只会在 define 中有效。</p>
         </div>
 
         <div class="subSection">
-            <h4><a href="#circular" name="circular">Circular Dependencies</a><span class="sectionMark">§ 1.3.8</span></h4>
+            <h4><a href="#circular" name="circular">循环依赖</a><span class="sectionMark">§ 1.3.8</span></h4>
 
-            <p>If you define a circular dependency (a needs b and b needs a), then in this case when b's module function is called, it will get an undefined value for a. b can fetch a later after modules have been defined by using the require() method (be sure to specify require as a dependency so the right context is used to look up a):</p>
+            <p>如果定义了循环依赖（a需要b b需要a），那么在此情况下，当 b 的模块定义函数调用时，它获取到的 a 值将是一个 undefined。b 可以晚些在模块定义后，使用 require() 方法来再次获取 a （保证指定 require 作为一个依赖项，来使用正确的上下文环境查找 a）：</p>
 
-            <pre><code class="javascript"><span class="comment">//Inside b.js:</span>
+            <pre><code class="javascript"><span class="comment">// b.js 中:</span>
 define([<span class="string">"require"</span>, <span class="string">"a"</span>],
     <span class="function"><span class="keyword">function</span><span class="params">(require, a)</span> {</span>
-        <span class="comment">//"a" in this case will be null if a also asked for b,</span>
-        <span class="comment">//a circular dependency.</span>
+        <span class="comment">// 如果 a 也依赖 b，这种情形下 "a" 会是个空值，</span>
+        <span class="comment">// 一个循环依赖。</span>
         <span class="keyword">return</span> <span class="function"><span class="keyword">function</span><span class="params">(title)</span> {</span>
             <span class="keyword">return</span> require(<span class="string">"a"</span>).doSomething();
         }
@@ -412,15 +412,14 @@ define([<span class="string">"require"</span>, <span class="string">"a"</span>],
 );
 </code></pre>
 
-            <p>Normally you should not need to use require() to fetch a module, but instead rely on the module being passed in to the function as an argument. Circular dependencies are rare, and usually a sign that you might want to rethink the design. However, sometimes they are needed, and in that case, use require() as specified above.</p>
+            <p>正常情况下，是不应该使用 require() 来加载模块的，而应依赖传入定义函数的参数。循环依赖非常少见，而且通常预示着应该重新思考设计的思路。但是，有时必须这么做，在这种情况下，要使用上述指定的 require() 方法。</p>
 
-            <p>If you are familiar with CommonJS modules, you could instead use <strong>exports</strong> to create an empty object for the module that is available immediately for reference by other modules. By doing this on both sides of a circular dependency, you can then safely hold on to the the other module. This only works if each module is exporting an object for the module value, not a function:</p>
+            <p>如果你熟悉 CommonJS 模块，可以用 <strong>exports</strong> 为模块创建一个空对象，可以立即被其他模块所引用。在循环引用的双方都这么做，就可以安全地引用双方模块。这只会在双方都 export 一个对象而不是函数时有效：</p>
 
-            <pre><code class="javascript"><span class="comment">//Inside b.js:</span>
+            <pre><code class="javascript"><span class="comment">// b.js中:</span>
 define(<span class="function"><span class="keyword">function</span><span class="params">(require, exports, module)</span> {</span>
-    <span class="comment">//If "a" has used exports, then we have a real</span>
-    <span class="comment">//object reference here. However, we cannot use</span>
-    <span class="comment">//any of a's properties until after b returns a value.</span>
+    <span class="comment">// 如果 "a" 使用了 exports，我们就有一个真实的引用对象了。</span>
+    <span class="comment">// 但是，直到 b 返回一个值之前，我们都不能访问 a 的任一属性。</span>
     <span class="keyword">var</span> a = require(<span class="string">"a"</span>);
 
     exports.foo = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
@@ -429,15 +428,14 @@ define(<span class="function"><span class="keyword">function</span><span class="
 });
 </code></pre>
 
-            <p>Or, if you are using the dependency array approach, ask for the special
-                <a href="https://github.com/jrburke/requirejs/wiki/Differences-between-the-simplified-CommonJS-wrapper-and-standard-AMD-define#wiki-magic">'exports' dependency:</a>
+            <p>如果你在使用依赖数组的方式，请引用特殊的
+                <a href="https://github.com/jrburke/requirejs/wiki/Differences-between-the-simplified-CommonJS-wrapper-and-standard-AMD-define#wiki-magic">'exports' 依赖:</a>
             </p>
 
-            <pre><code class="javascript"><span class="comment">//Inside b.js:</span>
+            <pre><code class="javascript"><span class="comment">// b.js中:</span>
 define([<span class="string">'a'</span>, <span class="string">'exports'</span>], <span class="function"><span class="keyword">function</span><span class="params">(a, exports)</span> {</span>
-    <span class="comment">//If "a" has used exports, then we have a real</span>
-    <span class="comment">//object reference here. However, we cannot use</span>
-    <span class="comment">//any of a's properties until after b returns a value.</span>
+    <span class="comment">// 如果 "a" 使用了 exports，我们就有一个真实的引用对象了。</span>
+    <span class="comment">// 但是，直到 b 返回一个值之前，我们都不能访问 a 的任一属性。</span>
 
     exports.foo = <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
         <span class="keyword">return</span> a.bar();
@@ -448,24 +446,20 @@ define([<span class="string">'a'</span>, <span class="string">'exports'</span>],
         </div>
 
         <div class="subSection">
-            <h4><a href="#jsonp" name="jsonp">Specify a JSONP Service Dependency</a><span class="sectionMark">§ 1.3.9</span></h4>
+            <h4><a href="#jsonp" name="jsonp">指定 JSONP 服务依赖</a><span class="sectionMark">§ 1.3.9</span></h4>
 
-            <p><a href="http://en.wikipedia.org/wiki/JSON#JSONP">JSONP</a> is a way of calling some services in JavaScript. It works across domains and it is an established approach to calling services that just require an HTTP GET via a script tag.</p>
+            <p><a href="http://en.wikipedia.org/wiki/JSON#JSONP">JSONP</a> 是 JavaScript 中一种调用服务的方式。它是一种常用的跨域调用服务的方式，原理仅仅是通过 script 标签发起一个HTTP GET请求。</p>
 
-            <p>To use a JSONP service in RequireJS, specify "define" as the callback parameter's value. This means you can get the value of a JSONP URL as if it was a module definition.</p>
-
-            <p>Here is an example that calls a JSONP API endpoint. In this example, the JSONP callback parameter is called "callback", so "callback=define" tells the API to wrap the JSON response in a "define()" wrapper:</p>
-
+            <p>要在 RequireJS 中使用 JSONP 服务，需要将 "define" 指定为回调参数的值。也就是说可以像一个模块定义的方式来获取 JSONP URL 的值。
             <pre><code class="javascript">require([<span class="string">"http://example.com/api/data.json?callback=define"</span>],
     <span class="function"><span class="keyword">function</span> <span class="params">(data)</span> {</span>
-        <span class="comment">//The data object will be the API response for the</span>
-        <span class="comment">//JSONP data call.</span>
+        <span class="comment">// data 对象是 JSONP 调用 API 的返回值。</span>
         console.log(data);
     }
 );
 </code></pre>
 
-            <p>This use of JSONP should be limited to JSONP services for initial application setup. If the JSONP service times out, it means other modules you define via define() may not get executed, so the error handling is not robust.</p>
+            <p>应用初始化时的 JSONP 服务应该限制这种 JSONP 的用法。一旦如果 JSONP 服务超时了，其他通过 define() 定义的模块可能也无法执行，因此这里的错误处理并不是很健壮。</p>
 
             <p><strong>Only JSONP return values that are JSON objects are supported</strong>. A JSONP response that is an array, a string or a number will not work.</p>
 
