@@ -29,10 +29,10 @@ title: 下载 RequireJS
 
         <div class="subSection">
             <h4 class="hbox">
-            <a name="requirejs">require.js 2.1.14</a>
+            <a name="requirejs">require.js 2.1.15</a>
             <span class="boxFlex"></span>
-            <a class="download" href="http://requirejs.org/docs/release/2.1.14/minified/require.js">压缩版</a>
-            <a class="download" href="http://requirejs.org/docs/release/2.1.14/comments/require.js">完整版</a>
+            <a class="download" href="http://requirejs.org/docs/release/2.1.15/minified/require.js">压缩版</a>
+            <a class="download" href="http://requirejs.org/docs/release/2.1.15/comments/require.js">完整版</a>
             </h4>
 
             <p>你要做的只是在浏览器中使用 require.js。</p>
@@ -42,7 +42,7 @@ title: 下载 RequireJS
             <h4 class="hbox">
             <a name="rjs">r.js: 优化工具与 Node/Rhino/xpcshell 适配器</a>
             <span class="boxFlex"></span>
-            <a class="download" href="http://requirejs.org/docs/release/2.1.14/r.js">下载</a>
+            <a class="download" href="http://requirejs.org/docs/release/2.1.15/r.js">下载</a>
             </h4>
 
             <p>r.js 允许你在Node，Rhino 或 xpcshell 中运行模块和优化工具。</p>
@@ -105,6 +105,14 @@ title: 下载 RequireJS
 
     <div class="section">
         <h2><a name="releasenotes">版本日志</a><span class="sectionMark">§ 3</span></h2>
+
+        <h3 id="2-1-15">2.1.15</h3>
+
+        <p>Mainly fixes a regression from 2.1.14 in the r.js optimizer where <a href="https://github.com/jrburke/r.js/issues/704">some define() calls were not found</a>. The most common manifestations of the bug would be either an extra <code>define('jquery', function(){})</code> in the build output or namespaced builds not working. The fixes for 2.1.15 are just in the optimizer. Full list of changes:</p>
+
+        <ul>
+            <li><a href="https://github.com/jrburke/r.js/issues?q=milestone%3A2.1.15+is%3Aclosed">Fixed r.js optimizer issues</a></li>
+        </ul>
 
         <h3 id="2-1-14">2.1.14</h3>
 

@@ -95,11 +95,11 @@ title: RequireJS API
 <span class="tag">&lt;<span class="keyword">script</span><span class="attribute"> data-main=<span class="value">"scripts/main.js"</span></span><span class="attribute"> src=<span class="value">"scripts/require.js"</span></span>&gt;</span><span class="tag">&lt;/<span class="keyword">script</span>&gt;</span>
 </code></pre>
 
-        <p>baseUrl 也可以通过 <a href="#config">RequireJS config</a> 来手动配置。如果没有明确的配置，并且未使用 data-main 属性，baseUrl 将默认设置为运行 RequireJS 的 HTML 页面所在的目录。</p>
+        <p>baseUrl 也可以通过 <a href="#config">RequireJS config</a> 来手动配置。如果没有明确的配置，并且未使用 data-main 属性，baseUrl 将默认设置为运行 RequireJS 的 HTML 页面所在目录。</p>
 
         <p>RequireJS 默认假设所有的依赖项都是脚本，因此它不期望在模块 ID 中看到 “.js” 的后缀。RequireJS 会在将模块 ID 转换为路径时，自动补全 “.js” 后缀。通过 <a href="#config-paths">paths 配置</a>，还可以为一组脚本设置路径。相对于传统的 &lt;script&gt; 标签，这些能力可以让你使用更少的字符来加载脚本。</p>
 
-        <p>如果你想直接引用一个脚本，不使用 “baseUrl + paths” 的规则来加载它。如果一个模块 ID 包含下面的字符，ID 将不会使用 “baseUrl + paths” 的配置，而将它当作一个以文档为相对路径的普通 URL：</p>
+        <p>也许你有想直接引用一个脚本，不使用 “baseUrl + paths” 的规则来加载的时候。如果一个模块 ID 包含下面的字符，ID 将不会使用 “baseUrl + paths” 的配置，而将它当作一个以文档为相对路径的普通 URL：</p>
 
         <ul>
             <li>以 “.js” 结尾；</li>
