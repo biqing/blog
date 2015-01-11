@@ -1,30 +1,40 @@
-date: "2014-11-15 17:57:23.219"
-argv: "c:\\Program Files\\nodejs\\node.exe c:\\Users\\johnnyguo\\AppData\\Roaming\\npm\\node_modules\\hexo\\bin\\hexo s"
-os: Windows_NT 6.2.9200 win32 x64
-versions:
-  http_parser: "1.0"
-  node: 0.10.33
+date: 2015-01-11 21:56:56.475
+argv: c:\Program Files\nodejs\node.exe c:\Users\Johnny Kwok\AppData\Roaming\npm\node_modules\hexo\bin\hexo s
+os: Windows_NT 6.1.7601 win32 x64
+version:
+  hexo: 2.4.5
+  http_parser: 1.0
+  node: 0.10.25
   v8: 3.14.5.9
   ares: 1.9.0-DEV
-  uv: 0.10.29
+  uv: 0.10.23
   zlib: 1.2.3
-  modules: "11"
-  openssl: 1.0.1j
-  hexo: 2.8.3
+  modules: 11
+  openssl: 1.0.1e
 ---
-[debug] 17:57:22.923 Config file loaded from c:\Users\johnnyguo\Documents\GitHub\blog\_config.yml[debug] 17:57:22.925 Version info checked successfully[debug] 17:57:22.975 Processed: draft.md (1ms)[debug] 17:57:22.975 Processed: post.md (0ms)[debug] 17:57:22.976 Processed: page.md (1ms)[debug] 17:57:22.976 Processed: photo.md (1ms)[debug] 17:57:22.993 Processed: about/index.md (0ms)[debug] 17:57:23.011 Processed: source/CNAME (0ms)[debug] 17:57:23.011 Processed: source/favicon.ico (0ms)[debug] 17:57:23.011 Processed: source/fancybox/blank.gif (0ms)[debug] 17:57:23.011 Processed: source/fancybox/fancybox_loading.gif (0ms)[debug] 17:57:23.011 Processed: source/fancybox/fancybox_loading@2x.gif (0ms)[debug] 17:57:23.011 Processed: source/fancybox/fancybox_overlay.png (0ms)[debug] 17:57:23.011 Processed: source/fancybox/fancybox_sprite.png (0ms)[debug] 17:57:23.012 Processed: source/fancybox/fancybox_sprite@2x.png (0ms)[debug] 17:57:23.012 Processed: source/fancybox/jquery.fancybox.pack.js (0ms)[debug] 17:57:23.012 Processed: source/fancybox/jquery.fancybox.css (0ms)[debug] 17:57:23.012 Processed: source/images/HTML5.png (0ms)[debug] 17:57:23.012 Processed: source/images/avatar.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-10.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-1.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-12.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-11.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-13.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-14.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-15.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-17.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-16.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-18.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-19.png (0ms)[debug] 17:57:23.012 Processed: source/images/minions-2.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-20.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-21.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-22.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-3.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-4.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-5.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-6.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-7.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-8.png (0ms)[debug] 17:57:23.013 Processed: source/images/minions-9.png (0ms)[debug] 17:57:23.013 Processed: source/images/requirejs/favicon.png (0ms)[debug] 17:57:23.013 Processed: source/css/style-desktop.css (0ms)[debug] 17:57:23.013 Processed: source/css/style-mobile.css (0ms)[debug] 17:57:23.013 Processed: source/css/skel-noscript.css (0ms)[debug] 17:57:23.014 Processed: source/css/style-narrow.css (1ms)[debug] 17:57:23.014 Processed: source/css/style-narrower.css (0ms)[debug] 17:57:23.014 Processed: source/css/style-wide.css (0ms)[debug] 17:57:23.014 Processed: source/css/style.css (0ms)[debug] 17:57:23.014 Processed: source/css/tomorrow-night.css (0ms)[debug] 17:57:23.014 Processed: source/css/font/FontAwesome.otf (0ms)[debug] 17:57:23.014 Processed: source/css/font/fontawesome-webfont.eot (0ms)[debug] 17:57:23.014 Processed: source/css/font/fontawesome-webfont.svg (0ms)[debug] 17:57:23.014 Processed: source/css/font/fontawesome-webfont.woff (0ms)[debug] 17:57:23.014 Processed: source/css/font/fontawesome-webfont.ttf (0ms)[debug] 17:57:23.014 Processed: source/css/images/bg1.png (0ms)[debug] 17:57:23.014 Processed: source/css/images/bg2.png (0ms)[debug] 17:57:23.014 Processed: source/css/images/mobileUI-site-nav-opener-bg.svg (0ms)[debug] 17:57:23.014 Processed: source/css/requirejs/highlight.css (0ms)[debug] 17:57:23.014 Processed: source/css/requirejs/main.css (0ms)[debug] 17:57:23.014 Processed: source/css/requirejs/fonts/Inconsolata.ttf (0ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/arrow-x.png (1ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/arrow.png (0ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/dot.png (0ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/line.png (0ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/grid.png (0ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/shadow.png (0ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/logo.png (0ms)[debug] 17:57:23.015 Processed: source/css/requirejs/i/sprite.png (0ms)[debug] 17:57:23.015 Processed: source/js/gallery.js (0ms)[debug] 17:57:23.015 Processed: source/js/highlight.pack.js (0ms)[debug] 17:57:23.015 Processed: source/js/html5shiv.js (0ms)[debug] 17:57:23.015 Processed: source/js/init.js (0ms)[debug] 17:57:23.016 Processed: source/js/jquery.imagesloaded.min.js (1ms)[debug] 17:57:23.016 Processed: source/js/jquery.min.js (0ms)[debug] 17:57:23.016 Processed: source/js/skel-panels.min.js (0ms)[debug] 17:57:23.016 Processed: source/js/skel.min.js (0ms)[debug] 17:57:23.016 Processed: source/js/styles/arta.css (0ms)[debug] 17:57:23.016 Processed: source/js/styles/ascetic.css (0ms)[debug] 17:57:23.016 Processed: source/js/styles/brown_paper.css (0ms)[debug] 17:57:23.016 Processed: source/js/styles/brown_papersq.png (0ms)[debug] 17:57:23.016 Processed: source/js/styles/dark.css (0ms)[debug] 17:57:23.016 Processed: source/js/styles/docco.css (0ms)[debug] 17:57:23.016 Processed: source/js/styles/far.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/default.css (1ms)[debug] 17:57:23.017 Processed: source/js/styles/github.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/foundation.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/googlecode.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/idea.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/ir_black.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/mono-blue.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/magula.css (0ms)[debug] 17:57:23.017 Processed: source/js/styles/monokai.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/monokai_sublime.css (1ms)[debug] 17:57:23.018 Processed: source/js/styles/obsidian.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/pojoaque.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/pojoaque.jpg (0ms)[debug] 17:57:23.018 Processed: source/js/styles/railscasts.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/rainbow.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/school_book.png (0ms)[debug] 17:57:23.018 Processed: source/js/styles/school_book.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/solarized_dark.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/solarized_light.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/sunburst.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/tomorrow-night-blue.css (0ms)[debug] 17:57:23.018 Processed: source/js/styles/tomorrow-night-bright.css (0ms)[debug] 17:57:23.019 Processed: source/js/styles/tomorrow-night-eighties.css (1ms)[debug] 17:57:23.019 Processed: source/js/styles/tomorrow-night.css (0ms)[debug] 17:57:23.019 Processed: source/js/styles/tomorrow.css (0ms)[debug] 17:57:23.019 Processed: source/js/styles/vs.css (0ms)[debug] 17:57:23.019 Processed: source/js/styles/xcode.css (0ms)[debug] 17:57:23.019 Processed: source/js/styles/zenburn.css (0ms)[debug] 17:57:23.019 Processed: source/js/requirejs/init.js (0ms)[debug] 17:57:23.019 Processed: source/js/requirejs/lib/dojo.xd.js (0ms)[debug] 17:57:23.019 Processed: source/js/requirejs/lib/jquery.min.js (0ms)[debug] 17:57:23.020 Processed: layout/archive.ejs (11ms)[debug] 17:57:23.020 Processed: layout/category.ejs (11ms)[debug] 17:57:23.020 Processed: layout/index.ejs (11ms)[debug] 17:57:23.020 Processed: layout/requirejs.ejs (11ms)[debug] 17:57:23.020 Processed: layout/page.ejs (11ms)[debug] 17:57:23.020 Processed: layout/tag.ejs (10ms)[debug] 17:57:23.020 Processed: layout/layout.ejs (11ms)[debug] 17:57:23.020 Processed: layout/post.ejs (11ms)[debug] 17:57:23.020 Processed: layout/_widget/category.ejs (10ms)[debug] 17:57:23.020 Processed: layout/_widget/search.ejs (10ms)[debug] 17:57:23.020 Processed: layout/_widget/blogroll.ejs (10ms)[debug] 17:57:23.020 Processed: layout/_widget/recent_posts.ejs (10ms)[debug] 17:57:23.020 Processed: layout/_widget/tagcloud.ejs (10ms)[debug] 17:57:23.020 Processed: layout/_widget/tag.ejs (10ms)[debug] 17:57:23.020 Processed: layout/_partial/after_footer.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/archive.ejs (11ms)[debug] 17:57:23.021 Processed: layout/_partial/google_analytics.ejs (11ms)[debug] 17:57:23.021 Processed: layout/_partial/comment.ejs (11ms)[debug] 17:57:23.021 Processed: layout/_partial/article.ejs (11ms)[debug] 17:57:23.021 Processed: layout/_partial/footer.ejs (11ms)[debug] 17:57:23.021 Processed: layout/_partial/pagination.ejs (11ms)[debug] 17:57:23.021 Processed: layout/_partial/head.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/requirejs/footer.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/requirejs.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/sidebar.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/requirejs/header.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/post/category.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/post/gallery.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/post/share.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/post/post_icon.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/post/tag.ejs (10ms)[debug] 17:57:23.021 Processed: layout/_partial/post/title.ejs (10ms)[debug] 17:57:23.176 Processed: 404.html (185ms)[debug] 17:57:23.180 Processed: requirejs/index.html (187ms)[debug] 17:57:23.193 Processed: requirejs/docs/download.html (200ms)[debug] 17:57:23.207 Processed: requirejs/docs/api.html (214ms)[debug] 17:57:23.208 Processed: requirejs/docs/start.html (215ms)[debug] 17:57:23.209 Theme config loaded[debug] 17:57:23.209 Processed: _config.yml (200ms)[error] 17:57:23.210 { name: 'HexoError',
-  reason: 'incomplete explicit mapping pair; a key node is missed',
-  mark: 
-   { name: null,
-     buffer: 'categories: Kategorien\nsearch: Suche\ntags: Tags\ntagcloud: Tag-Cloud\ntweets: Tweets\nprev: Vorherige Seite\nnext: Nächste Seite\ncomment: Kommentare\narchive_a: Archiv\narchive_b: Archiv: %s\npage: Seite %d\nrecent_posts: Neueste Artikel\n\u0000',
-     position: 180,
-     line: 9,
-     column: 17 },
-  message: 'Process failed: languages/de.yml',
-  domain: 
-   { domain: null,
-     _events: { error: [Function] },
-     _maxListeners: 10,
-     members: [ [Object] ] },
-  domainThrown: true,
-  stack: undefined }[debug] 17:57:23.219 Processed: languages/zh-CN.yml (210ms)[debug] 17:57:23.219 Processed: languages/zh-TW.yml (210ms)
+
+[debug] 21:55:58.381 Configuration file load successfully
+[debug] 21:55:58.381 Version info checked successfully
+[debug] 21:55:58.428 Loading database.
+[debug] 21:55:58.490 Theme layout loaded
+[debug] 21:55:58.506 Theme configuration loaded
+[debug] 21:55:58.631 Theme source loaded
+[debug] 21:55:58.631 Theme language files loaded
+[debug] 21:55:58.646 Processed: 404.html
+[debug] 21:55:58.646 Processed: about/index.md
+[debug] 21:55:58.662 Processed: requirejs/index.html
+[debug] 21:55:58.662 Processed: requirejs/docs/api.html
+[debug] 21:55:58.662 Processed: requirejs/docs/start.html
+[debug] 21:55:58.662 Processed: requirejs/docs/download.html
+[debug] 21:55:58.662 Processed: _posts/infinity-world-restart.md
+[debug] 21:55:58.662 Cache saved
+[info] 21:55:58.693 Hexo is running at localhost:80/. Press Ctrl+C to stop.
+[debug] 21:56:07.992 Render requirejs: requirejs/docs/start.html
+[info] 21:56:48.409 addDir Theme: %s source\js\requirejs\lib\新建文件夹
+[update] 21:56:53.120 Theme: source\js\requirejs\lib\highlight.xd.js
+[info] 21:56:53.120 unlinkDir Theme: %s source\js\requirejs\lib\新建文件夹
+[info] 21:56:53.120 addDir Theme: %s source\js\requirejs\lib\highlight
+[info] 21:56:53.120 addDir Theme: %s source\js\requirejs\lib\highlight
+[update] 21:56:56.475 Theme: source\js\requirejs\lib\highlight.xd.js
+[error] 21:56:56.475 Error: ENOENT, readdir 'c:\Users\Johnny Kwok\Documents\GitHub\blog\themes\striped\source\js\requirejs\lib\新建文件夹'
+Error: ENOENT, readdir 'c:\Users\Johnny Kwok\Documents\GitHub\blog\themes\striped\source\js\requirejs\lib\新建文件夹'
